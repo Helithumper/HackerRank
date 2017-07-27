@@ -1,4 +1,4 @@
-package problems;
+package problems.Algorithms.Warmups;
 
 import java.util.Scanner;
 
@@ -8,8 +8,10 @@ public class DiagonalDifference {
         for(int i = 0; i < matrix.length; i ++){
             suma = suma + matrix[i][i];
         }
-        for(int j = matrix.length-1; j >= 0; j--){
-            sumb = sumb + matrix[j][j];
+        int j = 0;
+        for(int i = matrix.length-1; i >=0; i--){
+            sumb = sumb+matrix[i][j];
+            j++;
         }
         return Math.abs(suma-sumb);
     }
