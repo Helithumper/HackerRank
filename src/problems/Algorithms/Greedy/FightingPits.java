@@ -4,6 +4,8 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class FightingPits {
+
+    //TODO Sorting and efficiency
     static boolean DEBUG = false;
     static void log(String s){
         if(DEBUG){
