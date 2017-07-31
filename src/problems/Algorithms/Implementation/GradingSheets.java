@@ -4,7 +4,11 @@ import java.util.Scanner;
 
 public class GradingSheets {
     static int[] solve(int[] grades){
-        // Complete this function
+        for(int i = 0; i < grades.length; i++){
+            if(grades[i]%5 > 2 && grades[i] >= 38){
+                grades[i] = (grades[i] + 4) / 5 * 5;
+            }
+        }
         return grades;
     }
 
